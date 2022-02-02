@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="{% static 'portfolio/assets/css/styles.css' %}" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'portfolio/assets/icons/apple-touch-icon-inc.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'portfolio/assets/icons/favicon-inc.png' %}"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Coulibaly N'golo Issa "incdev"| Software Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>incdev</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+    
+    <p></p>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="{% static 'portfolio/assets/images/wfh_1.svg' %}"
+        alt="incdev"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hello world!.
+          My name is Coulibaly N'golo Issa "codelove". I am a software developer passionate about web and mobile. I share with you here my work and my skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        I am an Ivorian developer. I studied at Pigier CI, one of the best private schools in the Ivory Coast. I obtained a license in Networks and Software Engineering in 2019. Passionate about everything software, I keep improving myself every day in the field of programming and computer science in general.        
+      </p>
+      <p>
+        I particularly like web and mobile and GNUX/LINUX systems. I find these two fields of computing really fascinating because they can make it possible to change the world.
+      </p>
+      <p>
+        Some of my projects are in progress but I have a good level for the development of your projects. Do not hesitate to contact me.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="{% static 'portfolio/assets/icons/icons8-python.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio/assets/icons/icons8-javascript.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="third-set animate__animated animate__pulse">
+          <img
+            src="{% static 'portfolio/assets/icons/icons8-django.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio/assets/icons/icons8-react-native.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="{% static 'portfolio/assets/icons/linux-tux-icon.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'portfolio/assets/icons/icons8-git.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="{% static 'portfolio/assets/images/mydisc.png' %}"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">My disc</h3>
+          <p class="project-details">
+            website (cms) for online disc reservations
+            This web application was developed with javascript and the django framework
+          </p>
+          <a href="" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="{% static 'portfolio/assets/images/musicapp.jpeg' %}"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Dozo music</h3>
+          <p class="project-details">
+            android and ios music app.
+            I use React native.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="{% static 'portfolio/assets/images/ecommerce.PNG' %}"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">malaya.com ecommerce</h3>
+          <p class="project-details">
+            <p><strong>Still in development</strong></p>
+            Ivorian website selling items online.
+            I use python/django on the backend side and pure javascript on the front end.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://twitter.com/incdev_" target="_blank"
+        ><img
+          src="{% static 'portfolio/assets/icons/icons8-twitter-circled.gif' %}"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/n-golo-issa-coulibaly-656556187/" target="_blank"
+        ><img
+          src="{% static 'portfolio/assets/icons/icons8-linkedin-circled.gif' %}"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/incdev96" target="_blank"
+        ><img src="{% static 'portfolio/assets/icons/icons8-github.gif' %}" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="{% static 'portfolio/assets/icons/icons8-upward-arrow.gif' %}"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/koladechris" target="_blank"
+          >Coulibaly N'golo Issa (incdev)</a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="{% static 'portfolio/assets/js/app.js' %}"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
